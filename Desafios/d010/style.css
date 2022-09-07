@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'idroid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal
+
+}
+
+body{
+    font-family: 'idroid' ;
+    background-color: rgb(171, 238, 174);
+}
+
+header{
+    color: white;
+    text-align: center;
+    background-color: rgb(12, 158, 12);
+}
+
+nav{
+    text-align: left;
+    margin: auto;
+    padding: 13px;
+}
+
+footer{
+    background-color:darkgreen;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+}

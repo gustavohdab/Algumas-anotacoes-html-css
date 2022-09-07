@@ -1,0 +1,136 @@
+
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        h1{
+            box-shadow: inset -7px -1px 9px 0px black;
+        
+        }
+
+        nav{
+            background-color: antiquewhite;
+            padding: 5px;
+            color: rgb(226, 208, 162);
+            margin: 3px;
+            font-weight: bold;
+            text-align: center;
+            box-shadow: -1px 1px 20px 4px rgba(0, 0, 0, 0.486);
+        }
+
+        nav > a{
+            text-decoration: none;
+            background-color: rgb(255, 255, 255);
+            margin-right: 30px;
+        }
+
+        nav > :hover{
+            background-color: rgb(251, 127, 255);
+            text-decoration: underline;
+        }
+
+        main{
+            padding: 10px;
+            margin: 10px;
+            background-color: aliceblue;
+            border-radius: 33px;
+        }
+
+        article{
+            background-color: antiquewhite;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+        }
+
+        main{
+            background-color: rgb(163, 189, 212);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 0px 0px 20px 0px black;
+            
+        }
+
+        footer{
+            background-color: blanchedalmond;
+            color: black;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        div#bola{
+            height: 100;
+            width: 100;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+
+        </nav>
+    </header>
+    
+    <main>
+        <section id="assuntos">
+            <p>Esportes Políticas Tecnologia</p>
+            
+        </section>
+
+        <section id="noticias">
+            <article>
+                
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero fugiat eaque. Doloribus aliquam voluptates nostrum, vitae ullam dicta rerum omnis, maxime a exercitationem quam vel architecto illo eligendi debitis.</p>
+                <p>
+                    Caralho que foda
+                </p>
+                
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        
+        <p>Desenvolvido por Gustavo Batista</p>
+    
+    </footer>
+    
+    <div id="bola"></div>
+    
+</body>
+</html>
