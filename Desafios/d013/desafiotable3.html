@@ -1,0 +1,118 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio pocisionamento de tabela</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 7;
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th{
+            background-color: gray;
+            color: white;
+            
+        }
+
+        th.categorias{
+            background-color: white;
+            color: black;
+        }
+
+        .media{
+            text-align: left;
+        }
+
+        .notamedia{
+            background-color: gray;
+            color: white;
+        }
+
+
+        .nota1x,.nota2x{
+            background-color: gray;
+            color: white;
+        }
+
+        
+
+
+
+        td.disciplinas{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio pocisionamento de tabela com colspan, rowspan e escopos (colgroup, rowgroup). </h1>
+    <table>
+        <thead>
+            <caption>
+                <tr>
+                    <th colspan="2" rowspan="2" scope="col">Área</th>
+                    <th colspan="2" rowspan="2" scope="row">Disciplinas</th>
+                    <th colspan="2" rowspan="1" scope="colgroup">Notas</th>
+                    <th colspan="2" rowspan="2" scope="row">Média</th>
+                </tr>
+                <tr>
+                    <th class="nota1x" scope="col">Nota 1</th>
+                    <th class="nota2x" scope="col">Nota 2</th>
+                </tr>
+            </caption>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" class="categorias" scope="rowgroup">Exatas</th>
+                <td colspan="3" class="disciplinas">Matemática</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="disciplinas">Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="disciplinas">Química</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="disciplinas">Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="6" class="media" scope="row">Média de Exatas</th>
+                <td class="notamedia">0.0</td>
+            </tr>
+            <tr>
+                <th rowspan="2" class="categorias" scope="rowgroup">Humanas</th>
+                <td colspan="3" class="disciplinas">História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="disciplinas">Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th colspan="6" class="media" scope="row">Média de Exatas</th>
+                <td class="notamedia">0.0</td>
+        </tbody>
+    </table>
+    
+</body>
+</html>
