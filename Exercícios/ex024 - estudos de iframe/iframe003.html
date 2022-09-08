@@ -15,6 +15,12 @@
             height: 400px;
 
         }
+
+        /*
+        
+        iframe é bom para usar em casos de querer colocar literalmente outra pagina em seu documento.
+
+        */
     </style>
 </head>
 <body>
@@ -33,7 +39,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nam veritatis quaerat velit, vitae libero voluptates eum odit placeat, quos mollitia veniam iure dolorem accusantium qui? Qui necessitatibus expedita architecto.
     </p>
 
-    <iframe id="tela" name="frame" src="" frameborder="0">
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opções acima </h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio aliquam delectus? Aliquam ipsam tempore esse dolores eos voluptate consequatur inventore totam, autem debitis, reprehenderit, odit possimus vitae odio non.</p><img src='https://static-cdn.jtvnw.net/jtv_user_pictures/41b4636a-f19f-4cac-8c9e-dceda7bcbf49-profile_image-70x70.png'>">
         <p>Infelizmente seu navegador não é compatível</p>
     </iframe>
 
