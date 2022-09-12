@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text"  name="nome" id="inome" required maxlength="15" minlength="5" placeholder="Nome Completo" autocomplete="name">
+        </p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 à 10" step="0.1" required>
+            <!-- Porque min e max dessa vez? simples, quando tratar de número com min e max tu usa isso. ex: Notas escolares, minimo é 0, máximo 10.
+                Não funciona colocar 4,3, 6,6...? Use step = faz com que aceite números de 0.1, 0.2... o que você configuar. -->
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2020-07">
+        </p>   
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2020-07-01">
+        </p>        
+        <p>
+            <label for="ihora">Hora da Prova</label>
+            <input type="time" name="hora" id="ihora" value="19:30">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    
+</body>
+</html>
