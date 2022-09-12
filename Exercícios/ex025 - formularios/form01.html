@@ -12,7 +12,9 @@
 </head>
 <body>
     <h1>Formulário</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <form action="cadastro.php" autocomplete="off" method="post"> 
+        <!-- GET = quando compartilhar URL com outras pessoas for desejavel, ou até 3.000bytes ou com dados sensíveis.
+        POST =  quando for enviar arquivos, não quiser dados um sensíveis na URL. -->
         <p>
             <label for="inome">Nome:</label> <input type="text" name="nome" id="inome">
         </p>

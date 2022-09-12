@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Quando tem senha, sempre usar method Post.
+            Autocomplete = bem útil quando for trabalhar com formulários, mas precisa específicar para o navegador o autocomplete correto para cada caixa de texto que o usuário irá preencher;
+            ex: se for nome de usuário, no input do usuário você coloca outro autocomplete, nesse caso de username.
+        -->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" size="10" placeholder="nome do usuário" autocomplete="username">
+             <!-- Required = campo obrigatório, muito útil.
+                  required minlenght = campo não pode ter menos do valor desejado
+                  maxlenght = campo possui máximo de caractéres 
+                  size = tamanho do campo de digitar, etc.
+                  placeholder = dica para o usuário do que preencher ná caixa. 
+            -->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlenght="1"
+            size="10" placeholder="mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+    
+</body>
+</html>
