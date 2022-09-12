@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset> <!-- Agrupamento de campos -->
+            <legend>Dados Pessoais</legend> <!-- legenda para fieldset -->
+            <p>
+                <label for="iname">Nome</label>
+                <input type="text" name="name" id="iname" autocomplete="username" minlength="5" maxlength="20" placeholder="usuário">
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="e-mail">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                            <!-- Estudar mais sobre RegEx. -->
+                            <!-- HTML5 patterns no google search tbm pode ajudar, mas não fica 100% precisa estudar JavaScript para aperfeiçoar. -->
+            </p>
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
