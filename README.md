@@ -1,3 +1,3 @@
 # HTML-CSS
  html5-css3
- aprendendo a gerenciar dispositivos
+ Aqui eu documento um pouco dos meus estudos em HTML5 - CSS3.
